@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('starter.account', [])
+	angular.module('starter.account')
 		.controller('AccountCtrl', AccountCtrl);
 
 		AccountCtrl.$inject = ['$scope'];
