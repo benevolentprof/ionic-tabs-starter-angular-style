@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('starter.chat', [])
+	angular.module('starter.chat')
 	.controller('ChatsCtrl', ChatsCtrl);
 
 	ChatsCtrl.$inject = ['$scope', 'Chats'];
