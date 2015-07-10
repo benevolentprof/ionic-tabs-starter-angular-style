@@ -1,8 +1,7 @@
 (function() {
 	'use strict';
 	angular.module('starter.chat', [])
-	.controller('ChatsCtrl', ChatsCtrl)
-	.controller('ChatDetailCtrl', ChatDetailCtrl);
+	.controller('ChatsCtrl', ChatsCtrl);
 
 	ChatsCtrl.$inject = ['$scope', 'Chats'];
 	function ChatsCtrl($scope, Chats) {
@@ -18,11 +17,6 @@
 	  $scope.remove = function(chat) {
 	    Chats.remove(chat);
 	  };
-	}
-
-	ChatDetailCtrl.$inject = ['$scope', '$stateParams', 'Chats'];
-	function ChatDetailCtrl ($scope, $stateParams, Chats) {
-	  $scope.chat = Chats.get($stateParams.chatId);
 	}
 
 })();
