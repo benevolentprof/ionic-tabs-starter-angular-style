@@ -1,0 +1,6 @@
+*.DS_Store
+*.keystore
+*.sw*
+*.log
+.tmp
+.sass-cache
