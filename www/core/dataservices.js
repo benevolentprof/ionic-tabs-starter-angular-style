@@ -36,22 +36,31 @@
 	    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
 	  }];
 
-	  return {
-	    all: function() {
-	      return chats;
-	    },
-	    remove: function(chat) {
-	      chats.splice(chats.indexOf(chat), 1);
-	    },
-	    get: function(chatId) {
-	      for (var i = 0; i < chats.length; i++) {
-	        if (chats[i].id === parseInt(chatId)) {
-	          return chats[i];
-	        }
-	      }
-	      return null;
-	    }
+	  var service = {
+	    all: allChats,
+	    remove: removeChat,
+	    get: getChat
 	  };
+		
+		return service;
+		
+		function allChats() {
+      return chats;
+    }
+		
+		function removeChat(chat) {
+      chats.splice(chats.indexOf(chat), 1);
+    }
+		
+		function getChat(chatId) {
+      for (var i = 0; i < chats.length; i++) {
+        if (chats[i].id === parseInt(chatId)) {
+          return chats[i];
+        }
+      }
+      return null;
+    }
+		
 	}
 
 })();
