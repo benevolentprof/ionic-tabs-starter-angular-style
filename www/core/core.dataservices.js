@@ -2,7 +2,7 @@
 	
 	'use strict';
 	
-	angular.module('starter.services', [])
+	angular.module('starter.core', [])
 		.factory('Chats', Chats);
 
 	function Chats() {

@@ -3,7 +3,7 @@
 	'use strict';
 	
 	angular
-		.module('starter')
+		.module('starter.core')
 		.run(appRun)
 		.config(appState);
 

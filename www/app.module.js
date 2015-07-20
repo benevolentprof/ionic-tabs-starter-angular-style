@@ -13,8 +13,7 @@
 		.module('starter', [
 			/* Shared modules */
 			'ionic', 
-			'starter.services',
-			
+			'starter.core',
 			/* Feature areas */
 			'starter.account',
 			'starter.chat',
