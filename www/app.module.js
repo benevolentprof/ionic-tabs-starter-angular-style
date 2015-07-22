@@ -14,6 +14,7 @@
 			/* Shared modules */
 			'ionic', 
 			'starter.core',
+			'starter.layout',
 			/* Feature areas */
 			'starter.account',
 			'starter.chat',
