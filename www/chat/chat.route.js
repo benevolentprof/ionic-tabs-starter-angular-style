@@ -17,16 +17,24 @@
 						state: 'tab.chats',
 						config: {
 							url: '/chats',
-							templateUrl: 'chat/tab-chats.html',
-							controller: 'ChatsCtrl'
+				      views: {
+				        'tab-chats': {
+				          templateUrl: 'chat/tab-chats.html',
+				          controller: 'ChatsCtrl'
+				        }
+				      }
 						}
 					},
 					{
 						state: 'tab.chat-detail',
 						config: {
 							url: '/chats/:chatId',
-							templateUrl: 'chat/chat-detail.html',
-							controller: 'ChatDetailCtrl'
+				      views: {
+				        'tab-chats': {
+				          templateUrl: 'chat/chat-detail.html',
+				          controller: 'ChatDetailCtrl'
+				        }
+				      }
 						}
 					}
 				];

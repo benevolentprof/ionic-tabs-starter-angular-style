@@ -17,8 +17,12 @@
 						state: 'tab.dash',
 						config: {
 							url: '/dash',
-		        	templateUrl: 'dash/tab-dash.html',
-							controller: 'DashCtrl'
+					    views: {
+					      'tab-dash': {
+					        templateUrl: 'dash/tab-dash.html',
+					        controller: 'DashCtrl'
+					      }
+							}
 						}
 					}
         ];

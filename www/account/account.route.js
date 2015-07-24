@@ -17,8 +17,12 @@
 						state: 'tab.account',
 						config: {
 							url: '/account',
-		        	templateUrl: 'account/tab-account.html',
-							controller: 'AccountCtrl'
+					    views: {
+					      'tab-account': {
+					        templateUrl: 'account/tab-account.html',
+					        controller: 'AccountCtrl'
+					      }
+					    }
 						}
 					}
         ];
