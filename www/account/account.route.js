@@ -8,7 +8,7 @@
 		appRun.$inject = ['routerHelper'];
 		
     function appRun(routerHelper) {
-        routerHelper.configureStates(getStates());
+        routerHelper.configureStates(getStates(), '/tab/dash');
     }
 
     function getStates() {

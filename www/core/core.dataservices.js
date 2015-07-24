@@ -44,6 +44,8 @@
 		
 		return service;
 		
+		//////////////////
+		
 		function allChats() {
       return chats;
     }
