@@ -14,7 +14,7 @@
     function getStates() {
         return [
 					{
-						state: 'account',
+						state: 'tab.account',
 						config: {
 							url: '/account',
 		        	templateUrl: 'account/tab-account.html',

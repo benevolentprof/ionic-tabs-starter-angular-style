@@ -14,7 +14,7 @@
     function getStates() {
         return [
 					{
-						state: 'chats',
+						state: 'tab.chats',
 						config: {
 							url: '/chats',
 							templateUrl: 'chat/tab-chats.html',
@@ -22,13 +22,13 @@
 						}
 					},
 					{
-						state: 'chat-detail',
+						state: 'tab.chat-detail',
 						config: {
 							url: '/chats/:chatId',
 							templateUrl: 'chat/chat-detail.html',
 							controller: 'ChatDetailCtrl'
 						}
 					}
-        ];
-    }
+				];
+			}
 })();

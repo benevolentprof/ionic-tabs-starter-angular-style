@@ -14,7 +14,7 @@
     function getStates() {
         return [
 					{
-						state: 'dash',
+						state: 'tab.dash',
 						config: {
 							url: '/dash',
 		        	templateUrl: 'dash/tab-dash.html',

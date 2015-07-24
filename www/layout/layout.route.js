@@ -17,7 +17,7 @@
                 state: 'tab',
                 config: {
 									url: '/tab',
-									//abstract: true,
+									abstract: true,
 									//template: '<ion-view><ion-content><h1>Gesundheit</h1><ui-view/></ion-content></ion-view>'								
                   templateUrl: 'layout/tabs.html'
 									//template: '<ui-view/>'
