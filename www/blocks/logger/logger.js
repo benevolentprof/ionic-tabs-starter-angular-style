@@ -14,8 +14,6 @@
             info    : info,
             success : success,
             warning : warning,
-
-            // straight to console; bypass toastr
             log     : $log.log
         };
 
