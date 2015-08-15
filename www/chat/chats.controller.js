@@ -16,14 +16,13 @@
 	  //$scope.chats = Chats.all();
 		Chats.all().then(
 			function(v){$scope.chats = v},
-			function(err){console.log(err)}
+			function(err){}
 			);
 			
-
 	  $scope.remove = function(chat) {
 			Chats.remove(chat).then(
 				function(v){},
-				function(err){console.log(err)}
+				function(err){}
 			);
 	  };
 	}

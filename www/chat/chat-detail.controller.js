@@ -9,7 +9,7 @@
 			Chats.get($stateParams.chatId)
 			.then(
 				function(v){ $scope.chat = v },
-				function(err) { console.log(err)}
+				function(err) { }
 			);
 	}
 
