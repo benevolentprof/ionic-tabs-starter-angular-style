@@ -6,7 +6,11 @@
 	ChatDetailCtrl.$inject = ['$scope', '$stateParams', 'Chats'];
 	
 	function ChatDetailCtrl ($scope, $stateParams, Chats) {
-	  $scope.chat = Chats.get($stateParams.chatId);
+			Chats.get($stateParams.chatId)
+			.then(
+				function(v){ $scope.chat = v },
+				function(err) { console.log(err)}
+			);
 	}
 
 })();

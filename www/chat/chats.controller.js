@@ -13,9 +13,18 @@
 	  //$scope.$on('$ionicView.enter', function(e) {
 	  //});
   
-	  $scope.chats = Chats.all();
+	  //$scope.chats = Chats.all();
+		Chats.all().then(
+			function(v){$scope.chats = v},
+			function(err){console.log(err)}
+			);
+			
+
 	  $scope.remove = function(chat) {
-	    Chats.remove(chat);
+			Chats.remove(chat).then(
+				function(v){},
+				function(err){console.log(err)}
+			);
 	  };
 	}
 
