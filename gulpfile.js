@@ -6,9 +6,12 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var jshint = require('gulp-jshint');
 
 var paths = {
-  sass: ['./scss/**/*.scss']
+  sass: ['./scss/**/*.scss'],
+  js: ['./www/js/**/*.js', '!./www/js/lib']
+	
 };
 
 gulp.task('default', ['sass']);
@@ -49,4 +52,10 @@ gulp.task('git-check', function(done) {
     process.exit(1);
   }
   done();
+});
+
+gulp.task('lint', function() {
+    gulp.src(paths.js)
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });
