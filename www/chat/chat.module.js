@@ -1,4 +1,4 @@
 (function() {
-	'use strict';
-	angular.module('starter.chat', []);
+    'use strict';
+    angular.module('starter.chat', []);
 })();

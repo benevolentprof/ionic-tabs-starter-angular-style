@@ -6,13 +6,13 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 (function() {
-	
-	'use strict';
-	
+
+    'use strict';
+
 	angular
 		.module('starter', [
 			/* Shared modules */
-			'ionic', 
+			'ionic',
 			'starter.core',
 			'starter.layout',
 			/* Feature areas */

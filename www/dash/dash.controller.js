@@ -1,9 +1,10 @@
 (function() {
-	'use strict';
-	angular.module('starter.dash')
-		.controller('DashCtrl', DashCtrl)
+    'use strict';
 
-	function DashCtrl(){
-	}
-	
+    angular.module('starter.dash')
+        .controller('DashCtrl', DashCtrl)
+
+    function DashCtrl() {
+    }
+
 })();

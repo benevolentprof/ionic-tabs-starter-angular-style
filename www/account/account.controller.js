@@ -1,13 +1,12 @@
 (function() {
-	'use strict';
-	angular.module('starter.account')
-		.controller('AccountCtrl', AccountCtrl);
+    'use strict';
+    angular.module('starter.account')
+        .controller('AccountCtrl', AccountCtrl);
 
-		AccountCtrl.$inject = ['$scope'];
-		function AccountCtrl($scope) {
-		  $scope.settings = {
-		    enableFriends: true
-		  };
-		}
-
+    AccountCtrl.$inject = ['$scope'];
+    function AccountCtrl($scope) {
+        $scope.settings = {
+            enableFriends: true
+        };
+    }
 })();

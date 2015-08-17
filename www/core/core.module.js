@@ -1,8 +1,8 @@
 (function() {
-	
-	'use strict';
-	
-	angular.module('starter.core', [
-		'blocks.router'
-	]);
+
+    'use strict';
+
+    angular.module('starter.core', [
+        'blocks.router'
+    ]);
 })();
