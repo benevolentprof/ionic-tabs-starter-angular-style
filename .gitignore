@@ -4,3 +4,4 @@
 *.log
 .tmp
 .sass-cache
+/node_modules
