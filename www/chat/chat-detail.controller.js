@@ -1,8 +1,9 @@
 (function() {
-	'use strict';
-	angular.module('starter.chat')
-	.controller('ChatDetailCtrl', ChatDetailCtrl);
+    'use strict';
+    angular.module('starter.chat')
+    .controller('ChatDetailCtrl', ChatDetailCtrl);
 
+<<<<<<< HEAD
 	ChatDetailCtrl.$inject = ['$scope', '$stateParams', 'Chats'];
 	
 	function ChatDetailCtrl ($scope, $stateParams, Chats) {
@@ -12,5 +13,12 @@
 				function(err) { }
 			);
 	}
+=======
+    ChatDetailCtrl.$inject = ['$scope', '$stateParams', 'Chats'];
+>>>>>>> origin/master
+
+    function ChatDetailCtrl ($scope, $stateParams, Chats) {
+        $scope.chat = Chats.get($stateParams.chatId);
+    }
 
 })();

@@ -16,17 +16,15 @@
 	  };
 		
 		return service;
-		
-		//////////////////
-		
+				
 		function allChats() {
 			var deferred = $q.defer();
 			if(chats){
 				deferred.resolve(chats);
 			} 
 			else{
-				deferred.reject("Chats not available");
-				exception.catcher("dataservice")("allChats failed");
+				deferred.reject('Chats not available');
+				exception.catcher('dataservice')('allChats failed');
 			} 
 			return deferred.promise;
     }
@@ -49,8 +47,8 @@
         deferred.resolve(message);				
 			}
 			else {
-				deferred.reject("No such chat message");
-				exception.catcher("dataservice")("getChat failed");
+				deferred.reject('No such chat message');
+				exception.catcher('dataservice')('getChat failed');
 			}
       return deferred.promise;
     }
